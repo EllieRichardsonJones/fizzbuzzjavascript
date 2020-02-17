@@ -69,4 +69,20 @@ describe('Javabuzz', function() {
 
   });
 
+  describe('when playing, says', function() {
+
+    it('"Javabuzz" when a number is divisible by three and five', function() {
+      expect(javabuzz.says(15)).toEqual("Javabuzz")
+    });
+
+  });
+
+  describe('when playing, says', function() {
+
+    it('"the number" when the number is not divisible by three or five', function() {
+      expect(javabuzz.says(16)).toEqual(16)
+    });
+
+  });
+
 });
